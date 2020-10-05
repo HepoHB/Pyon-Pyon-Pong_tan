@@ -3,6 +3,7 @@ package PingPong;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -88,7 +89,12 @@ public class Game extends Canvas implements Runnable,KeyListener{
 			Player2.Magic(Graph);		
 			
 		}
-
+		Font Text = new Font("Comic Sans MS",Font.PLAIN,52);
+		Graph.setColor(new Color(255,255,255));
+		Graph.setFont(Text);
+		Graph.drawLine(WIDTH*SCALE/2, 0, WIDTH*SCALE/2, 360);
+		Graph.drawString(String.valueOf(Ball.Pointer0), 140, 140);
+		Graph.drawString(String.valueOf(Ball.Pointer1), 460, 140);
 		BS.show();
 		
 	}

@@ -12,10 +12,16 @@ public class Bora {
 	public double SPEEDOSTAR = 10;
 	public static int WIDTHER = 20;
 	public static int HEIGHTER = 20;
+	public int Pointer0 = 0;
+	public int Pointer1 = 0;
+	public int FinalX;
+	public int FinalY;
 	
 	public Bora(int X, int Y){
 		XV = X;
 		YV = Y;
+		FinalY = Y;
+		FinalX = X;
 		
 		int Angle = new Random().nextInt(60);
 		
@@ -34,11 +40,15 @@ public class Bora {
 		}
 		
 		if(XV >= Game.WIDTH*Game.SCALE){
-			new Game();
+			this.Pointer0++;
+			XV = FinalX;
+			YV = FinalY;
 			return;
 			
 		} else if(XV < 0){
-			new Game();
+			this.Pointer1++;
+			XV = FinalX;
+			YV = FinalY;
 			return;
 			
 		}
