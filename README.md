@@ -1,5 +1,5 @@
 # Pong
-Clássico jogo "Pong" feito em Java a partir do "Curso Desenvolvimento de Games Completo" da Danki Code.
+Clássico jogo "Pong" feito em Java.
 
 ## Comandos
 ### Modos de Jogo
