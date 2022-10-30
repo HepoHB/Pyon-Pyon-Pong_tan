@@ -1,4 +1,4 @@
-# Pong
+# Pyon Pyon Pong Tan
 Clássico jogo "Pong" feito em Java.
 
 ## Comandos
